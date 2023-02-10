@@ -1,38 +1,129 @@
-.App {
-  text-align: center;
+html,
+body {
+  margin: 0rem;
+  padding: 0rem;
+  height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#root {
+  height: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.registerContainer {
   display: flex;
-  flex-direction: column;
+  height: 100%;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
+  background: linear-gradient(#007786, #00a9aa);
 }
 
-.App-link {
-  color: #61dafb;
+.headingRegister {
+  background-color: #00f5e1;
+  padding: 1rem 3rem;
+  font-size: 1.2rem;
+  color: #007a87;
+  position: absolute;
+  top: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.headingLogin {
+  background-color: #00f5e1;
+  padding: 1rem 3rem;
+  font-size: 1.2rem;
+  color: #007a87;
+  position: absolute;
+  top: 150px;
+}
+
+.contactIcon {
+  position: absolute;
+  top: 90px;
+  font-size: 5rem;
+}
+
+.formFields {
+  margin: 1.5rem 0rem;
+}
+
+.formContainer {
+  background-color: #1d2c4f;
+  padding: 2rem 2.5rem;
+  border-radius: 1.2rem;
+}
+
+.formContainer input {
+  padding: 1rem;
+  background-color: #4d5974;
+  border: none;
+  font-size: 1.2rem;
+  color: #8d98b3 !important;
+}
+
+.formContainer input:active {
+  outline: none;
+  background-color: #4d5974;
+}
+
+.formContainer input:focus {
+  background-color: #4d5974;
+}
+
+.input-group-text {
+  background-color: #4d5974;
+  border: none;
+  padding: 1rem;
+  border-right: 0.2rem solid #8d98b3;
+}
+
+.formContainer svg {
+  color: #8d98b3;
+  font-size: 1.3rem;
+}
+
+.formContainer ::placeholder {
+  color: #8d98b3;
+  font-size: 1.3rem;
+}
+
+.submitBtn {
+  display: flex;
+  transition: 0.5s ease-in-out;
+  margin: 2rem 0rem;
+}
+
+.submitBtn button {
+  width: 100%;
+  background-color: #00f5e1;
+  color: #007a87;
+  font-size: 1.3rem;
+  padding: 1rem;
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+  transition: 0.3s ease-in-out;
+}
+
+.submitBtn button:hover {
+  opacity: 0.8;
+}
+
+.form-account {
+  color: #00f5e1;
+}
+
+.form-account span {
+  cursor: pointer;
+}
+
+.errTxt {
+  position: absolute;
+  top: 600px;
+  color: red;
+  background-color: rgb(241, 158, 158);
+  padding: 0.5rem;
+}
+
+.tableHead {
+  box-shadow: 4px 2px 5px 0px grey;
 }
